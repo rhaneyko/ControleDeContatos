@@ -37,12 +37,15 @@ namespace ControleDeContatos.Controllers
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public IActionResult Apagar(int id)
         {
             _contatoRepositorio.Apagar(id);
             return RedirectToAction("Index");
         }
 
+=======
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
 =======
 >>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
         [HttpPost]
@@ -53,6 +56,7 @@ namespace ControleDeContatos.Controllers
         
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         [HttpPost]
         public IActionResult Alterar(ContatoModel contato) 
         {
@@ -60,6 +64,8 @@ namespace ControleDeContatos.Controllers
             return RedirectToAction("Index");
         
         }
+=======
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
 =======
 >>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
 

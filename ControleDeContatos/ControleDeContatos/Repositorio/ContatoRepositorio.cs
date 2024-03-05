@@ -6,6 +6,7 @@ namespace ControleDeContatos.Repositorio
     public class ContatoRepositorio : IContatoRepositorio
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         private readonly BancoContext _context;
         public ContatoRepositorio(BancoContext bancoContext) 
         {
@@ -19,6 +20,8 @@ namespace ControleDeContatos.Repositorio
         {
             return _context.Contatos.ToList();
 =======
+=======
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
         private readonly BancoContext _bancoContext;
         public ContatoRepositorio(BancoContext bancoContext) 
         {
@@ -27,11 +30,15 @@ namespace ControleDeContatos.Repositorio
         public List<ContatoModel> BuscarTodos()
         {
             return _bancoContext.Contatos.ToList();
+<<<<<<< HEAD
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
+=======
 >>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
         }
 
         public ContatoModel Adicionar(ContatoModel contato)
         {
+<<<<<<< HEAD
 <<<<<<< HEAD
             _context.Contatos.Add(contato);
             _context.SaveChanges();
@@ -64,12 +71,17 @@ namespace ControleDeContatos.Repositorio
 
             return true;
 =======
+=======
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
             //gravar no banco de dados
 
             _bancoContext.Contatos.Add(contato);
             _bancoContext.SaveChanges();
             return contato;
 
+<<<<<<< HEAD
+>>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
+=======
 >>>>>>> 2895ed94175598edbbf925dd9ae96e6ebcca2d0a
         }
     }
