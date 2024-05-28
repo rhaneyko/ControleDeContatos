@@ -1,13 +1,24 @@
-﻿using ControleDeContatos.Models;
+﻿using ControleDeContatos.Data;
+using ControleDeContatos.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleDeContatos.Repositorio
 {
     public class ContatoRepositorio : IContatoRepositorio
     {
-        ContatoModel IContatoRepositorio.Adicionar(ContatoModel contato)
+        private readonly BancoContext _bancoContext;
+        public ContatoRepositorio(BancoContext bancoContext) 
+        { 
+            _bancoContext = bancoContext;
+        }
+
+        public ContatoModel Adicionar(ContatoModel contato)
         {
-            throw new System.NotImplementedException();
+
+            _bancoContext.Contatos.Add(contato);
+            _bancoContext.SaveChanges();
+
+            return contato;
         }
     }
 }
