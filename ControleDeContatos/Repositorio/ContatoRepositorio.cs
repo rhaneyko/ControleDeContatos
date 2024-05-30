@@ -27,7 +27,6 @@ namespace ControleDeContatos.Repositorio
 
             _context.Contatos.Add(contato);
             _context.SaveChanges();
-
             return contato;
         }
 
