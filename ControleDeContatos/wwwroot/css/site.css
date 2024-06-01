@@ -70,11 +70,11 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
-field-validation-error {
+.field-validation-error {
     color: #e01d1d;
 }
 
-close-alert{
+.close-alert{
     position: absolute;
     right: -10px;
     top: -15px;
