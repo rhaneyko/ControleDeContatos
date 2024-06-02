@@ -23,6 +23,11 @@ namespace ControleDeContatos.Models
         
         [Required(ErrorMessage = "Digite a senha do usuário")]
         public string Senha { get; set; }
+
+        public bool SenhaValida(string senha)
+        {
+            return Senha == senha;
+        }
         
     }
 }
