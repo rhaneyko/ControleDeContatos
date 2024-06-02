@@ -26,7 +26,6 @@ namespace ControleDeContatos.Repositorio
         public UsuarioModel Adicionar(UsuarioModel usuario)
         {
 
-            usuario.DataCadastro = DateTime.Now;
             _context.Usuarios.Add(usuario);
             _context.SaveChanges();
             return usuario;
@@ -41,7 +40,6 @@ namespace ControleDeContatos.Repositorio
             usuarioDB.Email = usuario.Email;
             usuarioDB.Login = usuario.Login;
             usuarioDB.Perfil = usuario.Perfil;
-            usuarioDB.DataAtualizacao = DateTime.Now;
 
             _context.Usuarios.Update(usuarioDB);
             _context.SaveChanges();
