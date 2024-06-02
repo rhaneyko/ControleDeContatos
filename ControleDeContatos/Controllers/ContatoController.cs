@@ -33,6 +33,7 @@ namespace ControleDeContatos.Controllers
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
             return View(contato);
         }
+
         public IActionResult Apagar(int id)
         {
             try
