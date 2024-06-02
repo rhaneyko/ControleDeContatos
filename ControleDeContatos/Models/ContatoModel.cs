@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ControleDeContatos.Models
@@ -17,5 +18,7 @@ namespace ControleDeContatos.Models
         [Required(ErrorMessage = "Digite o celular do contato")]
         [Phone(ErrorMessage = "O celular informado não é valido!")]
         public string Celular { get; set; }
+        public DateTime DataCadastro { get; set; }
+        public DateTime? DataAtualizado { get; set; }
     }
 }
